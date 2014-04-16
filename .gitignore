@@ -1,3 +1,5 @@
+build
+CMakeLists.user
 # Compiled Object files
 *.slo
 *.lo
@@ -19,3 +21,5 @@
 *.exe
 *.out
 *.app
+
+arcomage.log
