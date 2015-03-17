@@ -10,6 +10,6 @@ INCLUDE(CheckCSourceCompiles)
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_subdirectory(thirdparty)
+add_subdirectory(third_party)
 add_subdirectory(game)
 #add_subdirectory(tools)
