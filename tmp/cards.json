@@ -1,0 +1,517 @@
+{
+"Name": "Brick Shortage",
+"Cost": "0 Bricks",
+"Description": "All players lose 8 bricks"
+},
+{
+"Name": "Earthquake",
+"Cost": "0 Bricks",
+"Description": "-1 To all player's quarrys"
+},
+{
+"Name": "Lucky Cache",
+"Cost": "0 Bricks",
+"Description": "+2 Bricks, +2 Gems, Play again"
+},
+{
+"Name": "Strip Mine",
+"Cost": "0 Bricks",
+"Description": "-1 Quarry, +10 wall. You gain 5 gems"
+},
+{
+"Name": "Friendly Terrain",
+"Cost": "1 Bricks",
+"Description": "+1 Wall. Play again"
+},
+{
+"Name": "Rock Garden",
+"Cost": "1 Bricks",
+"Description": "+1 Wall, +1 Tower, +2 Recruits"
+},
+{
+"Name": "Basic Wall",
+"Cost": "2 Bricks",
+"Description": "+3 Wall"
+},
+{
+"Name": "Innovations",
+"Cost": "2 Bricks",
+"Description": "+1 To all player's quarrys, you gain 4 gems"
+},
+{
+"Name": "Work Overtime",
+"Cost": "2 Bricks",
+"Description": "+5 Wall. You lose six gems"
+},
+{
+"Name": "Foundations",
+"Cost": "3 Bricks",
+"Description": "If wall = 0, +6 wall, else +3 wall"
+},
+{
+"Name": "Miners",
+"Cost": "3 Bricks",
+"Description": "+1 Quarry"
+},
+{
+"Name": "Sturdy Wall",
+"Cost": "3 Bricks",
+"Description": "+4 Wall"
+},
+{
+"Name": "Collapse!",
+"Cost": "4 Bricks",
+"Description": "-1 Enemy quarry"
+},
+{
+"Name": "Mother Lode",
+"Cost": "4 Bricks",
+"Description": "If quarry &lt; enemy quarry, +2 quarry. Else, +1 quarry"
+},
+{
+"Name": "Big Wall",
+"Cost": "5 Bricks",
+"Description": "+6 Wall"
+},
+{
+"Name": "Copping the Tech",
+"Cost": "5 Bricks",
+"Description": "If quarry &lt; enemy quarry, quarry = enemy quarry"
+},
+{
+"Name": "Flood Water",
+"Cost": "6 Bricks",
+"Description": "Player(s) w/lowest Wall are -1 Dungeon and 2 damage to tower"
+},
+{
+"Name": "New Equipment",
+"Cost": "6 Bricks",
+"Description": "+2 Quarry"
+},
+{
+"Name": "Dwarven Miners",
+"Cost": "7 Bricks",
+"Description": "+4 wall, +1 quarry"
+},
+{
+"Name": "Forced Labor",
+"Cost": "7 Bricks",
+"Description": "+9 Wall, lose 5 recruits"
+},
+{
+"Name": "Tremors",
+"Cost": "7 Bricks",
+"Description": "All walls take 5 damage. Play again"
+},
+{
+"Name": "Reinforced Wall",
+"Cost": "8 Bricks",
+"Description": "+8 wall"
+},
+{
+"Name": "Secret Room",
+"Cost": "8 Bricks",
+"Description": "+1 Magic. Play again"
+},
+{
+"Name": "Crystal Rocks",
+"Cost": "9 Bricks",
+"Description": "+7 wall, gain 7 gems"
+},
+{
+"Name": "Porticulus",
+"Cost": "9 Bricks",
+"Description": "+5 Wall, +1 dungeon"
+},
+{
+"Name": "Barracks",
+"Cost": "10 Bricks",
+"Description": "+6 recruits, +6 wall. If dungeon &lt; enemy dungeon, +1 dungeon"
+},
+{
+"Name": "Harmonic Ore",
+"Cost": "11 Bricks",
+"Description": "+6 Wall, +3 tower"
+},
+{
+"Name": "Mondo Wall",
+"Cost": "13 Bricks",
+"Description": "+12 Wall"
+},
+{
+"Name": "Battlements",
+"Cost": "14 Bricks",
+"Description": "+7 Wall, 6 damage to enemy"
+},
+{
+"Name": "Focused Designs",
+"Cost": "15 Bricks",
+"Description": "+8 wall, +5 tower"
+},
+{
+"Name": "Great Wall",
+"Cost": "16 Bricks",
+"Description": "+15 wall"
+},
+{
+"Name": "Shift",
+"Cost": "17 Bricks",
+"Description": "Switch your wall with enemy wall"
+},
+{
+"Name": "Rock Launcher",
+"Cost": "18 Bricks",
+"Description": "+6 wall. 10 damage to enemy"
+},
+{
+"Name": "Dragon's Heart",
+"Cost": "24 Bricks",
+"Description": "+20 Wall, +8 Tower"
+},
+
+"Magic Card",
+
+{
+"Name": "Bag of Baubles",
+"Cost": "0 Gems",
+"Description": "If tower &lt; enemy tower, +2 Tower. Else +1 Tower"
+},
+{
+"Name": "Rainbow",
+"Cost": "0 Gems",
+"Description": "+1 Tower to all players. You gain 3 gems"
+},
+{
+"Name": "Quartz",
+"Cost": "1 Gem",
+"Description": "+1 Tower. Play again"
+},
+{
+"Name": "Amethyst",
+"Cost": "2 Gems",
+"Description": "+3 Tower"
+},
+{
+"Name": "Gemstone Flaw",
+"Cost": "2 Gems",
+"Description": "3 damage to enemy tower"
+},
+{
+"Name": "Prism",
+"Cost": "2 Gems",
+"Description": "Draw 1 card. Discard 1 card. Play again"
+},
+{
+"Name": "Smoky Quartz",
+"Cost": "2 Gems",
+"Description": "1 damage to enemy tower. Play again"
+},
+{
+"Name": "Power Burn",
+"Cost": "3 Gems",
+"Description": "5 damage to your tower. +2 Magic"
+},
+{
+"Name": "Ruby",
+"Cost": "3 Gems",
+"Description": "+5 Tower"
+},
+{
+"Name": "Spell Weavers",
+"Cost": "3 Gems",
+"Description": "+1 Magic"
+},
+{
+"Name": "Gem Spear",
+"Cost": "4 Gems",
+"Description": "5 damage to enemy tower"
+},
+{
+"Name": "Quarry's Help",
+"Cost": "4 Gems",
+"Description": "+7 Tower. Lose 10 bricks"
+},
+{
+"Name": "Solar Flare",
+"Cost": "4 Gems",
+"Description": "+2 tower. 2 damage to enemy tower"
+},
+{
+"Name": "Apprentice",
+"Cost": "5 Gems",
+"Description": "+4 Tower, you lose 3 recruits, 2 damage to enemy tower"
+},
+{
+"Name": "Discord",
+"Cost": "5 Gems",
+"Description": "7 damage to all towers, all players magic -1"
+},
+{
+"Name": "Lodestone",
+"Cost": "5 Gems",
+"Description": "+8 Tower. This card can't be discarded without playing it"
+},
+{
+"Name": "Crystal Matrix",
+"Cost": "6 Gems",
+"Description": "+1 Magic. +3 Tower. +1 Enemy tower"
+},
+{
+"Name": "Emerald",
+"Cost": "6 Gems",
+"Description": "+8 Tower"
+},
+{
+"Name": "Crumblestone",
+"Cost": "7 Gems",
+"Description": "+5 Tower. Enemy loses 6 bricks"
+},
+{
+"Name": "Harmonic Vibe",
+"Cost": "7 Gems",
+"Description": "+1 Magic. +3 Tower. +3 Wall"
+},
+{
+"Name": "Parity",
+"Cost": "7 Gems",
+"Description": "All player's magic equals the highest player's magic"
+},
+{
+"Name": "Crystallize",
+"Cost": "8 Gems",
+"Description": "+11 Tower. -6 Wall"
+},
+{
+"Name": "Shatterer",
+"Cost": "8 Gems",
+"Description": "-1 Magic. 9 damage to enemy tower"
+},
+{
+"Name": "Pearl of Wisdom",
+"Cost": "9 Gems",
+"Description": "+5 Tower. +1 Magic"
+},
+{
+"Name": "Sapphire",
+"Cost": "10 Gems",
+"Description": "+11 Tower"
+},
+{
+"Name": "Lightning Shard",
+"Cost": "11 Gems",
+"Description": "If Tower &lt; enemy wall, 8 damage to enemy tower. Else 8 damage"
+},
+{
+"Name": "Crystal Shield",
+"Cost": "12 Gems",
+"Description": "+8 Tower. +3 Wall"
+},
+{
+"Name": "Fire Ruby",
+"Cost": "13 Gems",
+"Description": "+6 Tower. 4 damage to all enemy towers"
+},
+{
+"Name": "Empathy Gem",
+"Cost": "14 Gems",
+"Description": "+8 Tower. +1 Dungeon"
+},
+{
+"Name": "Sanctuary",
+"Cost": "15 Gems",
+"Description": "+10 Tower. +5 Wall, gain 5 recruits"
+},
+{
+"Name": "Diamond",
+"Cost": "16 Gems",
+"Description": "+15 Tower"
+},
+{
+"Name": "Lava Jewel",
+"Cost": "17 Gems",
+"Description": "+12 Tower. 6 damage to all enemies"
+},
+{
+"Name": "Phase Jewel",
+"Cost": "18 Gems",
+"Description": "+13 Tower. +6 Recruits. +6 Bricks"
+},
+{
+"Name": "Dragon's Eye",
+"Cost": "21 Gems",
+"Description": "+20 Tower"
+},
+
+"Dungeon Card",
+
+{
+"Name": "Full Moon",
+"Cost": "0 Recruits",
+"Description": "+1 to all player's Dungeon. You gain 3 recruits"
+},
+{
+"Name": "Mad Cow Disease",
+"Cost": "0 Recruits",
+"Description": "All players lose 6 recruits"
+},
+{
+"Name": "Faerie",
+"Cost": "1 Recruit",
+"Description": "2 damage. Play again"
+},
+{
+"Name": "Moody Goblins",
+"Cost": "1 Recruit",
+"Description": "4 damage. You lose 3 gems"
+},
+{
+"Name": "Elven Scout",
+"Cost": "2 Recruits",
+"Description": "Draw 1 card. Discard 1 card. Play again"
+},
+{
+"Name": "Gnome",
+"Cost": "2 Recruits",
+"Description": "3 damage. +1 gem"
+},
+{
+"Name": "Spearman",
+"Cost": "2 Recruits",
+"Description": "If Wall &gt; enemy Wall do 3 Damage else do 2 damage"
+},
+{
+"Name": "Goblin Mob",
+"Cost": "3 Recruits",
+"Description": "6 damage. You take 3 damage"
+},
+{
+"Name": "Minotaur",
+"Cost": "3 Recruits",
+"Description": "+1 Dungeon"
+},
+{
+"Name": "Orc",
+"Cost": "3 Recruits",
+"Description": "5 damage"
+},
+{
+"Name": "Berserker",
+"Cost": "4 Recruits",
+"Description": "8 damage. 3 damage to your tower"
+},
+{
+"Name": "Goblin Archers",
+"Cost": "4 Recruits",
+"Description": "3 damage to enemy tower. You take 1 damage"
+},
+{
+"Name": "Dwarves",
+"Cost": "5 Recruits",
+"Description": "4 Damage. +3 Wall"
+},
+{
+"Name": "Imp",
+"Cost": "5 Recruits",
+"Description": "6 Damage. All players lose 5 bricks, gems and recruits"
+},
+{
+"Name": "Slasher",
+"Cost": "5 Recruits",
+"Description": "6 Damage"
+},
+{
+"Name": "Little Snakes",
+"Cost": "6 Recruits",
+"Description": "4 damage to enemy tower"
+},
+{
+"Name": "Ogre",
+"Cost": "6 Recruits",
+"Description": "7 Damage"
+},
+{
+"Name": "Rabid Sheep",
+"Cost": "6 Recruits",
+"Description": "6 Damage. Enemy loses 3 recruits"
+},
+{
+"Name": "Shadow Faerie",
+"Cost": "6 Recruits",
+"Description": "2 damage to enemy tower. Play again"
+},
+{
+"Name": "Troll Trainer",
+"Cost": "7 Recruits",
+"Description": "+2 Dungeon"
+},
+{
+"Name": "Spizzer",
+"Cost": "8 Recruits",
+"Description": "If enemy wall = 0, 10 damage, else 6 damage"
+},
+{
+"Name": "Tower Gremlin",
+"Cost": "8 Recruits",
+"Description": "2 Damage. +4 Tower. +2 Wall"
+},
+{
+"Name": "Unicorn",
+"Cost": "9 Recruits",
+"Description": "If magic &gt; enemy magic, 12 damage, else 8 damage"
+},
+{
+"Name": "Werewolf",
+"Cost": "9 Recruits",
+"Description": "9 Damage"
+},
+{
+"Name": "Elven Archers",
+"Cost": "10 Recruits",
+"Description": "If wall &gt; enemy wall, 6 damage to enemy tower, else 6 damage"
+},
+{
+"Name": "Corrosion Cloud",
+"Cost": "11 Recruits",
+"Description": "If enemy wall &gt; 0, 10 damage, else 7 damage"
+},
+{
+"Name": "Rock Stompers",
+"Cost": "11 Recruits",
+"Description": "8 Damage, -1 enemy quarry"
+},
+{
+"Name": "Thief",
+"Cost": "12 Recruits",
+"Description": "Enemy loses 10 gems, 5 bricks, you gain 1/2 amt. round up"
+},
+{
+"Name": "Warlord",
+"Cost": "13 Recruits",
+"Description": "13 Damage. You lose 3 gems"
+},
+{
+"Name": "Succubus",
+"Cost": "14 Recruits",
+"Description": "5 Damage to enemy tower, enemy loses 8 recruits"
+},
+{
+"Name": "Stone Giant",
+"Cost": "15 Recruits",
+"Description": "10 Damage. +4 Wall"
+},
+{
+"Name": "Vampire",
+"Cost": "17 Recruits",
+"Description": "10 Damage. Enemy loses 5 recruits, -1 enemy dungeon"
+},
+{
+"Name": "Pegasus Lancer",
+"Cost": "18 Recruits",
+"Description": "12 Damage to enemy tower"
+},
+{
+"Name": "Dragon",
+"Cost": "25 Recruits",
+"Description": "20 Damage. Enemy loses 10 gems, -1 enemy dungeon"
+},
+

@@ -1,3 +1,4 @@
+sudo: false
 language: cpp
 
 compiler:
@@ -12,26 +13,34 @@ env:
     - ARCH_FLAGS_x86_64=''
     - secure: "todo"
 
-before_install:
-  - sudo add-apt-repository ppa:ubuntu-toolchain-r/test -y
-  - sudo apt-get update -qq
-  - sudo apt-get install -qq g++-4.9 libstdc++-4.9-dev
-  - sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-4.9 90
-  - sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.9 90
-  - sudo apt-get install -qq cmake doxygen valgrind
-  - sudo apt-get install libboost-all-dev liblua5.1-dev
-  - sudo apt-get install libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev
+addons:
+  apt:
+   sources:
+   - ubuntu-sdk-team
+   - ubuntu-toolchain-r-test
+   - boost-latest
+   packages:
+   - cmake
+   - doxygen
+   - valgrind
+   - qtdeclarative5-dev
+   - libboost-all-dev
+   - liblua5.1-dev
+   - libsdl1.2-dev
+   - libsdl-image1.2-dev
+   - libsdl-mixer1.2-dev
+   - libsdl-ttf2.0-dev
 
-#install: true
+install:
+- if [ "$CXX" = "g++" ]; then export CXX="g++-4.9" CC="gcc-4.9"; fi
 
-before_script:
-    - mkdir build
-    - >
-        eval "ARCH_FLAGS=\${ARCH_FLAGS_${ARCH}}" ;
-        (cd build && cmake
-        -DCMAKE_VERBOSE_MAKEFILE=ON
-        -DCMAKE_BUILD_TYPE=$CONF
-        -DCMAKE_CXX_FLAGS="$ARCH_FLAGS" ..)
 script:
-  - cd build
-  - make
+- mkdir build
+- >
+  eval "ARCH_FLAGS=\${ARCH_FLAGS_${ARCH}}" ;
+  (cd build && cmake
+  -DCMAKE_VERBOSE_MAKEFILE=ON
+  -DCMAKE_BUILD_TYPE=$CONF
+  -DCMAKE_CXX_FLAGS="$ARCH_FLAGS" ..)
+- cd build
+- make

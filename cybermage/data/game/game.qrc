@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="game">
+    <file>decks/deck_0.json</file>
+  </qresource>
+  <qresource prefix="game">
+    <file>cards/card_0.json</file>
+    <file>cards/card_1.json</file>
+    <file>cards/card_2.json</file>
+    <file>cards/card_3.json</file>
+  </qresource>
+  <qresource prefix="game">
+    <file>img/card_0.png</file>
+    <file>img/card_1.png</file>
+    <file>img/card_2.png</file>
+    <file>img/card_3.png</file>
+  </qresource>
+</RCC>

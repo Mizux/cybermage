@@ -1,0 +1,9 @@
+{
+    "Name": "Card_1",
+    "Description": "...",
+    "image": ":/images/img_1.png",
+    "Attributes": {
+        "WallDamage": 1,
+        "BaseDamage": 0
+    }
+}

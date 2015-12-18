@@ -1,0 +1,6 @@
+{
+	"Name": "Card_0",
+	"Description": "Card Lorem Ipsum",
+	"image": ":/img/img_0.png",
+	"code": "player.shield = player.shield + 1"
+}

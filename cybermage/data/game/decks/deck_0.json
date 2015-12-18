@@ -1,0 +1,10 @@
+{
+	"Name": "Deck_0",
+	"Description": "Deck lorem ipsum",
+	"Cards": [
+		["card_0", 1],
+		["card_1", 2],
+		["card_2", 3],
+		["card_3", 4]
+	]
+}
