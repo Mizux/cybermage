@@ -6,22 +6,22 @@
 #include <QFrame>
 
 struct Card {
-  std::string cost;
-  std::string name;
-  std::string illustration;
-  std::string description;
-  std::string code;
+	std::string cost;
+	std::string name;
+	std::string illustration;
+	std::string description;
+	std::string code;
 };
 
 class CardWidget : public QFrame {
-  Q_OBJECT
- public:
-  CardWidget(const Card& card, QWidget* parent = 0);
+	Q_OBJECT
+	public:
+	CardWidget(const Card& card, QWidget* parent = 0);
 
- private:
-  void setup();
+	private:
+	void setup();
 
-  Card card_;
+	Card card_;
 };
 
 #endif
