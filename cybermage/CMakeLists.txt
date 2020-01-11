@@ -22,12 +22,16 @@ file(GLOB_RECURSE _SRCS src *.hpp *.cpp)
 file(GLOB_RECURSE _QRCS data *.qrc)
 
 add_executable(${PROJECT_NAME} ${_HDRS} ${_SRCS} ${_QRCS})
-target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Qml)
+target_link_libraries(${PROJECT_NAME} PRIVATE Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Qml)
 target_include_directories(${PROJECT_NAME} PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>)
 
-###############
-##  TESTING  ##
-###############
-#add_subdirectory(test)
+if(ENABLE_TESTING)
+#  add_subdirectory(test)
+endif()
+
+install(
+  TARGETS ${PROJECT_NAME}
+  EXPORT CybermageTargets
+  DESTINATION bin)
