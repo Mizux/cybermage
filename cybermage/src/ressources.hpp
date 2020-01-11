@@ -4,33 +4,33 @@
 #include <QFrame>
 
 struct Ressource {
-  std::string name;
-  std::int32_t value;
+	std::string name;
+	std::int32_t value;
 };
 
 class RessourceWidget : public QFrame {
-  Q_OBJECT
- public:
-  RessourceWidget(const Ressource& res, QWidget* parent = 0);
+	Q_OBJECT
+	public:
+	RessourceWidget(const Ressource& res, QWidget* parent = 0);
 
- private:
-  void setup();
+	private:
+	void setup();
 
-  Ressource ressource_;
+	Ressource ressource_;
 };
 
 class RessourcesWidget : public QFrame {
-  Q_OBJECT
-  RessourcesWidget(const RessourcesWidget&) = delete;
-  RessourcesWidget& operator=(const RessourcesWidget&) = delete;
+	Q_OBJECT
+	RessourcesWidget(const RessourcesWidget&) = delete;
+	RessourcesWidget& operator=(const RessourcesWidget&) = delete;
 
- public:
-  RessourcesWidget(const std::list<Ressource>& ressources, QWidget* parent = 0);
+	public:
+	RessourcesWidget(const std::list<Ressource>& ressources, QWidget* parent = 0);
 
- private:
-  void setup(const std::list<Ressource>& ressources);
+	private:
+	void setup(const std::list<Ressource>& ressources);
 
-  QList<RessourceWidget*> ressources_;
+	QList<RessourceWidget*> ressources_;
 };
 
 #endif
