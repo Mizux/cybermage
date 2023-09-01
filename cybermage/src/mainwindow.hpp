@@ -8,7 +8,7 @@ class PlayerWidget;
 
 class MainWindow : public QMainWindow {
 	Q_OBJECT
-	MainWindow(const MainWindow&) = delete;
+	MainWindow(const MainWindow&)            = delete;
 	MainWindow& operator=(const MainWindow&) = delete;
 
 	public:

@@ -21,7 +21,7 @@ class RessourceWidget : public QFrame {
 
 class RessourcesWidget : public QFrame {
 	Q_OBJECT
-	RessourcesWidget(const RessourcesWidget&) = delete;
+	RessourcesWidget(const RessourcesWidget&)            = delete;
 	RessourcesWidget& operator=(const RessourcesWidget&) = delete;
 
 	public:

@@ -1,11 +1,14 @@
 #include "mainwindow.hpp"
 
-//#include <thread>
-//#include <chrono>
+// #include <thread>
+// #include <chrono>
 #include "player.hpp"
+#include <QApplication>
 #include <QFrame>
 #include <QHBoxLayout>
 #include <QMainWindow>
+#include <QPushButton>
+#include <QVBoxLayout>
 
 MainWindow::MainWindow(const Player& player, const Player& enemy, QWidget* parent)
   : QMainWindow(parent)
@@ -20,16 +23,31 @@ MainWindow::MainWindow(const Player& player, const Player& enemy, QWidget* paren
 void
 MainWindow::setup(const Player& player, const Player& enemy) {
 	QFrame* frame            = new QFrame;
-	QHBoxLayout* frameLayout = new QHBoxLayout;
+	QVBoxLayout* frameLayout = new QVBoxLayout;
 
-	player_ = new PlayerWidget(player, this);
-	// player_->setVisible(true);
-	frameLayout->addWidget(player_);
+	{
+		QHBoxLayout* boardLayout = new QHBoxLayout;
 
-	enemy_ = new PlayerWidget(enemy);
-	// enemy_->setVisible(false);
-	frameLayout->addWidget(enemy_);
+		player_ = new PlayerWidget(player, this);
+		// player_->setVisible(true);
+		boardLayout->addWidget(player_);
 
+		enemy_ = new PlayerWidget(enemy, this);
+		// enemy_->setVisible(false);
+		boardLayout->addWidget(enemy_);
+
+		frameLayout->addItem(boardLayout);
+	}
+	{ // Quit button at bottom
+		QSpacerItem* spacer =
+		  new QSpacerItem(0, 0, QSizePolicy::Minimum, QSizePolicy::Expanding);
+		frameLayout->addItem(spacer);
+
+		QPushButton* quitButton = new QPushButton("Quit", this);
+		quitButton->setShortcut(QKeySequence::Quit);
+		connect(quitButton, &QPushButton::clicked, qApp, &QApplication::quit);
+		frameLayout->addWidget(quitButton);
+	}
 	frame->setLayout(frameLayout);
 	setCentralWidget(frame);
 }

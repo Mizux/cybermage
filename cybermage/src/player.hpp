@@ -19,7 +19,7 @@ struct Player {
 
 class PlayerWidget : public QWidget {
 	Q_OBJECT
-	PlayerWidget(const PlayerWidget&) = delete;
+	PlayerWidget(const PlayerWidget&)            = delete;
 	PlayerWidget& operator=(const PlayerWidget&) = delete;
 
 	public:
