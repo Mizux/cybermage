@@ -1,0 +1,6 @@
+# Project Files unneeded by docker
+.dockerignore
+README.md
+Makefile
+docker/
+cache/

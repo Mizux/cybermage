@@ -22,6 +22,7 @@ file(GLOB_RECURSE _SRCS src *.hpp *.cpp)
 file(GLOB_RECURSE _QRCS data *.qrc)
 
 add_executable(${PROJECT_NAME} ${_HDRS} ${_SRCS} ${_QRCS})
+set_target_properties(${PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_NAME "cybermage")
 target_link_libraries(${PROJECT_NAME} PRIVATE
  Qt5::Core
  Qt5::Gui
@@ -38,5 +39,5 @@ endif()
 
 install(
   TARGETS ${PROJECT_NAME}
-  EXPORT CybermageTargets
+  EXPORT CyberMageTargets
   DESTINATION bin)

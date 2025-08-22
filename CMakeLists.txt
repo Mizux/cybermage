@@ -1,10 +1,5 @@
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.24)
 project(CyberMageMeta VERSION 1.0 LANGUAGES CXX)
-
-# Include file check macros honor CMAKE_REQUIRED_LIBRARIES.
-if(POLICY CMP0075)
-  cmake_policy(SET CMP0075 NEW)
-endif()
 
 # Force default build type to Release
 if(NOT CMAKE_BUILD_TYPE)
@@ -54,22 +49,22 @@ add_subdirectory(cybermage)
 # Install
 include(GNUInstallDirs)
 install(
-  EXPORT CybermageTargets
-  NAMESPACE Cybermage::
-  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/Cybermage
+  EXPORT CyberMageTargets
+  NAMESPACE CyberMage::
+  DESTINATION ${CMAKE_INSTALL_LIBDIR}/cmake/CyberMage
   COMPONENT Devel)
 include(CMakePackageConfigHelpers)
-configure_package_config_file(cmake/CybermageConfig.cmake.in
-  "${PROJECT_BINARY_DIR}/CybermageConfig.cmake"
-  INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/Cybermage"
+configure_package_config_file(cmake/CyberMageConfig.cmake.in
+  "${PROJECT_BINARY_DIR}/CyberMageConfig.cmake"
+  INSTALL_DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/CyberMage"
   NO_SET_AND_CHECK_MACRO
   NO_CHECK_REQUIRED_COMPONENTS_MACRO)
 write_basic_package_version_file(
-  "${PROJECT_BINARY_DIR}/CybermageConfigVersion.cmake"
+  "${PROJECT_BINARY_DIR}/CyberMageConfigVersion.cmake"
   COMPATIBILITY SameMajorVersion)
 install(
   FILES
-  "${PROJECT_BINARY_DIR}/CybermageConfig.cmake"
-  "${PROJECT_BINARY_DIR}/CybermageConfigVersion.cmake"
-  DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/Cybermage"
+  "${PROJECT_BINARY_DIR}/CyberMageConfig.cmake"
+  "${PROJECT_BINARY_DIR}/CyberMageConfigVersion.cmake"
+  DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/CyberMage"
   COMPONENT Devel)
